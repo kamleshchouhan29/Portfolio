@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: rgb(4, 4, 50);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #080844;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+nav ul li {
+    list-style: none;
+    margin: 0px 25px;
+
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+
+
+.left {
+    font-size: 1.6rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 5px;
+    /* border: 1px solid white; */
+    border-radius: 50px;
+
+
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftsection {
+    color: white;
+    margin: 50px 0px;
+    font-size: 1.5rem;
+
+
+}
+
+    .left img {
+        height: 55px;
+   }
+
+.rightsection {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.purple {
+    color: rgb(158, 80, 231);
+}
+
+.right-mid {
+    border: 2px solid #414638;
+    width: 25vw;
+    height: 25vw;
+    margin: auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-mid-inner {
+    border: none;
+}
+
+.right-mid-image1 {
+    border: none;
+    opacity: 0.50;
+    /* background-color: #00000047; */
+    backdrop-filter: blur(20px);
+    position: absolute;
+    z-index: 0;
+}
+
+.right-mid-inner1 {
+    border: 2px solid #080844;
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.right-mid-image2 {
+    background-image: url("src/profile.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------About--------------------- */
+
+
+.AboutSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+
+.AboutSection div {
+    width: 30%;
+}
+
+
+
+.LeftSide {
+    color: white;
+    /* background-color: red; */
+}
+
+.about-text-heading {
+    margin: 25px 15px;
+    font-size: 25px;
+}
+
+.about-text-big {
+    color: rgb(138, 138, 138);
+    font-size: x-large;
+}
+
+.about-s-text {
+    color: rgb(255, 255, 255);
+}
+
+
+.LeftSide p {
+    margin: 80px 10px;
+}
+
+.Rightside {
+
+    margin: 50px 0px;
+}
+
+
+/* --------------Project-------------------------- */
+
+
+.project-section {
+    width: 99vw;
+    height: 250vh;
+    margin: auto;
+    background-color: rgb(4, 4, 50);
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.project-inner {
+    width: 80vw;
+    height: 250vh;
+    margin: auto;
+    background-color: rgb(4, 4, 50);
+}
+
+.project-heading {
+    padding: 50px 0px;
+}
+
+.project-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.project-card {
+    width: 35vw;
+    height: 65vh;
+    margin-bottom: 50px;
+    background-color: rgb(8, 8, 68);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 35vw;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.image1 {
+    background-image: url("src/12.png");
+}
+
+.image2 {
+    background-image: url("src/15.png");
+}
+
+.image3 {
+    background-image: url("src/18.png");
+}
+
+.image4 {
+    background-image: url("src/13.png");
+}
+
+.image5 {
+    background-image: url("src/11.png");
+}
+
+.image6 {
+    background-image: url("src/14.png");
+}
+
+.card-heading {
+    color: white;
+    width: 30vw;
+    margin: auto;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.card-info {
+    width: 30vw;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-box {
+    padding: 7px 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.about-button-container {
+    width: 30vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card-button {
+    width: 15vw;
+    background-color: rgb(4, 4, 50);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.card-button:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.skill-section {
+    background-color: #111111;
+    width: 100%;
+    height: 165vh;
+}
+
+.skill-heading {
+    width: 80vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.skill-inner {
+    width: 80vw;
+    height: 150vh;
+    margin: auto;
+}
+
+.skill-inner-heading {
+    color: white;
+    width: 70vw;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.skill-box {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-section {
+    width: 99vw;
+    height: 170vh;
+    margin: auto;
+    background-color: rgb(4, 4, 50);
+}
+
+.skill-card {
+    width: 30vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(8, 8, 68);
+    border-radius: 30px;
+}
+
+.skill-card-heading {
+    color: white;
+    text-align: center;
+    width: 30vw;
+    margin: auto;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.contact-section {
+    width: 100%;
+    height: 65vh;
+    margin-top: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(4, 4, 50);
+}
+
+.footer-inner {
+    width: 80vw;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-heading {
+    width: 50vw;
+    color: #757575;
+    font-size: xx-large;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+.contact {
+    width: 20vw;
+    color: #fff;
+    display: flex;
+    justify-items: start;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer-text {
+    color: white;
+
+}
+
+.footer-line {
+    width: 80vw;
+    height: 2px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.service {
+    width: 19vw;
+    text-align: start;
+}
+
+.footer-nav {
+    width: 80vw;
+    margin: auto;
+}
+
+.nav-list1>li {
+    
+    width: 80px;
+    height: 20px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav-list {
+        visibility: hidden;
+    }
+
+    .hero-middle1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section {
+        justify-content: start;
+        height: 100vh;
+    }
+
+    .right-mid {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .right-mid-inner1 {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .left-mid {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90vw;
+        height: 35vh;
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    .left-mid-text {
+        width: 85vw;
+        height: 30vh;
+        padding: 15px;
+    }
+
+    .hero-middle2-button1 {
+        padding: 10px 15px;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .hero-middle2-button2 {
+        padding: 10px 20px;
+        font-size: large;
+    }
+
+    .hero-middle2 {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .about-section {
+        flex-direction: column;
+        height: 65vh;
+    }
+
+    .about-left {
+        width: 80vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-right {
+        width: 80vw;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project-card {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .card-image {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .card-info {
+        width: 70vw;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-contain {
+        grid-template-columns: 1fr;
+    }
+
+    .project-section {
+        height: 430vh;
+    }
+
+    .card-button {
+        width: 40vw;
+    }
+
+    .card-heading {
+        width: 70vw;
+        text-align: center;
+    }
+
+    .skill-card {
+        width: 70vw;
+        padding: 20px 5vw;
+
+    }
+
+    .skill-card-heading {
+        width: 80vw;
+    }
+
+    .skill-section {
+        height: 520vw;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .footer-heading {
+        word-spacing: 0;
+        letter-spacing: 0;
+
+        width: 90vw;
+    }
+
+    .contact {
+        width: 90vw;
+        padding-top: 30px;
+    }
+
+    .footer-line {
+        width: 90vw;
+    }
+
+    .footer-nav {
+        visibility: hidden;
+    }
+
+    .footer {
+        height: 65vh;
+    }
+
+    .about-button-container {
+        width: auto;
+    }
+}
+
+.upside {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: updrop 0.75s ease-in forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes updrop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.left-animation {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: leftSwift 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes leftSwift {
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.left-image-animation {
+    opacity: 0;
+    transform: translateX(-100px);
+    transform: scale(0.5);
+    animation: leftSwift 0.7s ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+
+.right-animation {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: rightSwift 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes rightSwift {
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.left-text-animation {
+    opacity: 0;
+    transform: translateX(700px);
+    transform: scale(.90);
+    animation: rightSwift 0.90s ease-in forwards;
+    animation-delay: 0.4s;
+}
+
+.special-text-animation {
+    opacity: 0;
+    transform: translateX(700px);
+    transform: scale(.90);
+    animation: rightSwift 0.90s ease-in forwards;
+    animation-delay: 0.7s;
+}
+
+.fade-animaiton {
+    opacity: 0;
+    animation: fade 0.7s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.scroll-left-animation {
+    animation: left-swift linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes left-swift {
+    from {
+        opacity: 0;
+        transform: scale(.70);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.scroll-left-text-animation {
+    animation: left-swift linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+@keyframes card {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+}
+
+.card-animation {
+    animation: card linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes inner-card {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.inner-card-animation {
+    animation: inner-card linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.scroll-left-animation1 {
+    animation: left-swift1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+
+@keyframes left-swift1 {
+    from {
+        opacity: 0;
+        transform: scale(.70);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
